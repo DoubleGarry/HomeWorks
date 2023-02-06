@@ -21,5 +21,11 @@ public class Main {
         System.out.println("Год выпуска - " + countOfMonteCristo.getPublishingYear());
 
         System.out.println(levTolstoy + " " + aleksandrDumas);
+        System.out.println();
+
+        System.out.println(warAndPeace);
+        System.out.println();
+
+        System.out.println(warAndPeace.equals(countOfMonteCristo));
     }
 }

@@ -21,4 +21,17 @@ public class Book {
     public void setPublishingYear(int publishingYear){
         this.publishingYear = publishingYear;
     }
+
+    @Override
+    public String toString(){
+        return bookName + "; " + author + "; " + publishingYear;
+    }
+    @Override
+    public boolean equals(Object other) {
+        if (this.getClass() != other.getClass()) {
+            return false;
+        }
+        Book book = (Book) other;
+        return bookName.equals(book.getBookName()) && author.equals(book.getAuthor());
+    }
 }
