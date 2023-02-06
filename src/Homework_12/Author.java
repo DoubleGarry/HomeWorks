@@ -1,22 +1,26 @@
 package Homework_12;
 
 public class Author {
-    private String authorName;
-    private String authorSurname;
+    private String name;
+    private String surname;
 
 
-    public Author(String authorName, String authorSurname) {
-        this.authorName = authorName;
-        this.authorSurname = authorSurname;
+    public Author (String authorName, String authorSurname) {
+        this.name = authorName;
+        this.surname = authorSurname;
 
 
     }
 
-    public String getAuthorName() {
-        return this.authorName;
+    public String getName() {
+        return this.name;
     }
 
-    public String getAuthorSurname() {
-        return this.authorSurname;
+    public String getSurname() {
+        return this.surname;
+    }
+    @Override
+    public String toString(){
+        return name + " " + surname;
     }
 }
