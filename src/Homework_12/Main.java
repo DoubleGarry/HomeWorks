@@ -11,14 +11,17 @@ public class Main {
         System.out.println();
 
         Author aleksandrDumas = new Author("Александр", "Дюма");
-        Book countOfMonteCristo = new Book("Граф Монте-Кристо", aleksandrDumas, 1844);
-        System.out.println("Автор - " + countOfMonteCristo.getAuthor().getName() + " "
-                + countOfMonteCristo.getAuthor().getSurname());
-        System.out.println("Книга - " + countOfMonteCristo.getBookName());
-        System.out.println("Год выпуска - " + countOfMonteCristo.getPublishingYear());
+        Book countOfMonteCristy = new Book("Граф Монте-Кристо", aleksandrDumas, 1844);
+        Book countOfMonteCristy1 = new Book("Граф Монте-Кристо", aleksandrDumas, 1844);
 
-        countOfMonteCristo.setPublishingYear(1845);
-        System.out.println("Год выпуска - " + countOfMonteCristo.getPublishingYear());
+
+        System.out.println("Автор - " + countOfMonteCristy.getAuthor().getName() + " "
+                + countOfMonteCristy.getAuthor().getSurname());
+        System.out.println("Книга - " + countOfMonteCristy.getBookName());
+        System.out.println("Год выпуска - " + countOfMonteCristy.getPublishingYear());
+
+        //countOfMonteCristy.setPublishingYear(1845);
+        //System.out.println("Год выпуска - " + countOfMonteCristy.getPublishingYear());
 
         System.out.println(levTolstoy + " " + aleksandrDumas);
         System.out.println();
@@ -26,6 +29,9 @@ public class Main {
         System.out.println(warAndPeace);
         System.out.println();
 
-        System.out.println(warAndPeace.equals(countOfMonteCristo));
+        System.out.println(countOfMonteCristy1.equals(countOfMonteCristy));
+        System.out.println(countOfMonteCristy.hashCode());
+        System.out.println(countOfMonteCristy1.hashCode());
+        System.out.println(warAndPeace.hashCode());
     }
 }
