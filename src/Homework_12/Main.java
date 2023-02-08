@@ -33,5 +33,8 @@ public class Main {
         System.out.println(countOfMonteCristy.hashCode());
         System.out.println(countOfMonteCristy1.hashCode());
         System.out.println(warAndPeace.hashCode());
+        System.out.println();
+
+        System.out.println(levTolstoy.toString() + "; " + aleksandrDumas.toString());
     }
 }
