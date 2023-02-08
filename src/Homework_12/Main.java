@@ -23,9 +23,6 @@ public class Main {
         //countOfMonteCristy.setPublishingYear(1845);
         //System.out.println("Год выпуска - " + countOfMonteCristy.getPublishingYear());
 
-        System.out.println(levTolstoy + " " + aleksandrDumas);
-        System.out.println();
-
         System.out.println(warAndPeace);
         System.out.println();
 
@@ -36,5 +33,9 @@ public class Main {
         System.out.println();
 
         System.out.println(levTolstoy + "; " + aleksandrDumas);
+        System.out.println(levTolstoy.equals(aleksandrDumas));
+        System.out.println(aleksandrDumas.hashCode());
+        System.out.println(levTolstoy.hashCode());
+
     }
 }
