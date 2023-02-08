@@ -35,6 +35,6 @@ public class Main {
         System.out.println(warAndPeace.hashCode());
         System.out.println();
 
-        System.out.println(levTolstoy.toString() + "; " + aleksandrDumas.toString());
+        System.out.println(levTolstoy + "; " + aleksandrDumas);
     }
 }
