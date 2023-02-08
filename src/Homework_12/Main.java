@@ -3,16 +3,16 @@ package Homework_12;
 public class Main {
     public static void main(String[] args) {
         Author levTolstoy = new Author("Лев", "Толстой");
-        Book warAndPeace = new Book("Война и Мир", levTolstoy, 1867);
-        System.out.println("Автор - " + warAndPeace.getAuthor().getName() + " "
-                + warAndPeace.getAuthor().getSurname());
-        System.out.println("Книга - " + warAndPeace.getBookName());
-        System.out.println("Год выпуска - " + warAndPeace.getPublishingYear());
+        Book warAndPeace = new Book("Война и Мир", 1867, levTolstoy);
+        System.out.print("Автор - " + warAndPeace.getAuthor().getName() + " "
+                + warAndPeace.getAuthor().getSurname() +
+                "; Книга - " + warAndPeace.getBookName() +
+                "; Год выпуска - " + warAndPeace.getPublishingYear());
         System.out.println();
 
         Author aleksandrDumas = new Author("Александр", "Дюма");
-        Book countOfMonteCristy = new Book("Граф Монте-Кристо", aleksandrDumas, 1844);
-        Book countOfMonteCristy1 = new Book("Граф Монте-Кристо", aleksandrDumas, 1844);
+        Book countOfMonteCristy = new Book("Граф Монте-Кристо", 1844, aleksandrDumas);
+        Book countOfMonteCristy1 = new Book("Граф Монте-Кристо", 1844, aleksandrDumas);
 
 
         System.out.println("Автор - " + countOfMonteCristy.getAuthor().getName() + " "
@@ -20,8 +20,8 @@ public class Main {
         System.out.println("Книга - " + countOfMonteCristy.getBookName());
         System.out.println("Год выпуска - " + countOfMonteCristy.getPublishingYear());
 
-        //countOfMonteCristy.setPublishingYear(1845);
-        //System.out.println("Год выпуска - " + countOfMonteCristy.getPublishingYear());
+        countOfMonteCristy.setPublishingYear(1845);
+        System.out.println("Год выпуска - " + countOfMonteCristy.getPublishingYear());
 
         System.out.println(warAndPeace);
         System.out.println();
