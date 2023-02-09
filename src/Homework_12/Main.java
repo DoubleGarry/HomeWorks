@@ -14,11 +14,11 @@ public class Main {
         Book countOfMonteCristy = new Book("Граф Монте-Кристо", 1844, aleksandrDumas);
         Book countOfMonteCristy1 = new Book("Граф Монте-Кристо", 1844, aleksandrDumas);
 
-
-        System.out.println("Автор - " + countOfMonteCristy.getAuthor().getName() + " "
-                + countOfMonteCristy.getAuthor().getSurname());
-        System.out.println("Книга - " + countOfMonteCristy.getBookName());
-        System.out.println("Год выпуска - " + countOfMonteCristy.getPublishingYear());
+        System.out.print("Автор - " + countOfMonteCristy.getAuthor().getName() + " "
+                + countOfMonteCristy.getAuthor().getSurname() +
+                "; Книга - " + countOfMonteCristy.getBookName() +
+                "; Год выпуска - " + countOfMonteCristy.getPublishingYear());
+        System.out.println();
 
         countOfMonteCristy.setPublishingYear(1845);
         System.out.println("Год выпуска - " + countOfMonteCristy.getPublishingYear());
